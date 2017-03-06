@@ -1,7 +1,5 @@
 <template lang="html">
-  <div class="page">
 
-  </div>
 </template>
 
 <script>
