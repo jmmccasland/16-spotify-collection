@@ -32,7 +32,7 @@ export default {
   },
 
   created() {
-    this.search('Black Keys');
+    this.search('Foo Fighters');
   },
 
   methods: {
