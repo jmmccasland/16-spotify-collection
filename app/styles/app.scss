@@ -15,6 +15,7 @@ $white: hsl(0, 0%, 21%);
 
   display: flex;
   flex-direction: column;
+
 }
 
 .panel {
@@ -31,6 +32,7 @@ $white: hsl(0, 0%, 21%);
 }
 
 .track {
+
   &__media {
     @extend .media-left;
   }
@@ -52,4 +54,10 @@ $white: hsl(0, 0%, 21%);
 
     color: #fff;
   }
+}
+
+.media-right {
+  right: 1rem;
+  position: absolute;
+  color: #45a593;
 }
