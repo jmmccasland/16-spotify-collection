@@ -4,18 +4,18 @@
       <article class="media">
         <figure class="media-left">
           <p class="image is-64x64">
-            <img src="http://placecage.com/200/200" alt="">
+            <img v-bind:src="track.album.images[0].url" alt="">
           </p>
         </figure>
 
         <div class="media-content">
           <div class="">
-            <h2 class="track__artist">Nicholas Cage</h2>
-            <h3 class="track__name">Steal the Constitution</h3>
+            <h2 class="track__artist">{{track.artists[0].name}}</h2>
+            <h3 class="track__name">{{track.name}}</h3>
           </div>
         </div>
         <div class="media-right">
-          <span class="fa fa-3x fa-spotify"></span>
+          <a target="_blank" v-bind:href="track.external_urls.spotify"><span class="fa fa-3x fa-spotify"></span></a>
         </div>
       </article>
     </div>
@@ -24,11 +24,13 @@
 
 <script>
 export default {
-  props: track,
+  props: ['track'],
+
   data() {
     return {
     };
   },
+
 
   methods: {
 
