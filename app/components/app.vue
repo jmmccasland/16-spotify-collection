@@ -1,20 +1,14 @@
 <template lang="html">
-
-  <!-- <div class="page"> -->
-    <div class="section">
-      <div class="container">
-
-        <div class="panel">
-          <input v-on:keydown.enter="search(value)" v-model="value" class="panel-heading" type="text" >
-            <div class="results">
-            <song-item v-for="item in tracks" v-bind:track="item"></song-item>
-          </div>
+  <div class="section">
+    <div class="container">
+      <div class="panel">
+        <input v-on:keydown.enter="search(value)" v-model="value" class="panel-heading" type="text" placeholder="Search">
+          <div class="results">
+          <song-item v-for="item in tracks" v-bind:track="item"></song-item>
         </div>
       </div>
     </div>
-  <!-- </div> -->
-
-
+  </div>
 </template>
 
 <script>
